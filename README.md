@@ -1,4 +1,6 @@
-esnumekr
+eSNUME.kr
 ========
 
-ESNUME.KR
+## 소개
+
+[서울대 수학교육과 커뮤니티](http://esnume.kr) 사이트를 위한 패키지입니다.
