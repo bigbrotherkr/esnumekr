@@ -1,0 +1,103 @@
+article{
+  background: rgb(225,225,225); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(225,225,225,1) 0%, rgba(240,240,240,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(225,225,225,1)), color-stop(100%,rgba(240,240,240,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(225,225,225,1) 0%,rgba(240,240,240,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(225,225,225,1) 0%,rgba(240,240,240,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(225,225,225,1) 0%,rgba(240,240,240,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(225,225,225,1) 0%,rgba(240,240,240,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-9 */
+}
+.topbar, .contain-to-grid, .top-bar-section > ul > li{
+  background: rgb(0,21,34);/* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(0,21,34,1) 38%, rgba(0,10,17,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,rgba(0,21,34,1)), color-stop(100%,rgba(0,10,17,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,21,34,1) 38%,rgba(0,10,17,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,21,34,1) 38%,rgba(0,10,17,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,21,34,1) 38%,rgba(0,10,17,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,21,34,1) 38%,rgba(0,10,17,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001522', endColorstr='#000a11',GradientType=0 ); /* IE6-9 */
+}
+.top-bar-section ul.dropdown li{
+  background: rgb(0,21,34);/* Old browsers */
+}
+
+nav, nav ul.dropdown li{
+  box-shadow: 1px 1px 1px #005977;
+}
+nav .top-bar, nav ul li a{
+  background: transparent !important;
+}
+nav li.active{
+  background: #001f33 !important;
+}
+nav li:hover{
+  background: #002944 !important;
+}
+
+.list{
+  padding: 1.5em;
+  background: #f0f0f0;
+}
+.list .heading a i{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+  width: 1em;
+}
+.list .heading h3{
+  color: #0099ff;
+  text-shadow: 1px 1px 1px #007399;
+}
+
+.list .write{
+  color: #555;
+  font-size: .9em;
+}
+.list .write sub{
+  color: #777;
+}
+
+.list .title{
+  cursor: hand;
+}
+
+.list table{
+  box-shadow: 1px 1px 1px 1px #777;
+}
+.list table tr:hover{
+  background: #ddf1ff;
+}
+
+/* Document */
+.document, .comments{
+  background: #f7f7f7;
+  padding: 1.5em;
+}
+.document h4{
+  border-bottom: 1px dotted #0070bb;
+  font-weight: bold;
+  color: #0070bb;
+}
+
+img.profile{
+  width: 2em;
+  height: 2em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #777;
+}
+
+.comments .write q{
+  font-size: .8em;
+  color: #0070bb;
+}
+.comments p{
+  padding: .5em;
+}
+.comments .row:nth-child(2n){
+  background: #f0f0f0;
+}

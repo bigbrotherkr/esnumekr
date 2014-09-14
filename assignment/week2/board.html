@@ -1,0 +1,506 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>eSNUME 게시판</title>
+    <link rel='stylesheet' href='http://cdn.jsdelivr.net/foundation/5.4.3/css/foundation.min.css'/>
+    <link rel="stylesheet" href="./board.css"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.css">
+    <script src='http://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js'></script>
+    <script src='http://cdn.jsdelivr.net/foundation/5.4.3/js/foundation.min.js'></script>
+  </head>
+  <body>
+    <nav class='contain-to-grid sticky'>
+      <div class='top-bar' data-topbar role='navigation' data-options='sticky_on: large'>
+        <ul class='title-area'>
+          <li class='name'>
+            <h1><a href='#'>ⓔ-SNUME</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+        <section class='top-bar-section'>
+          <ul class='left'>
+            <li class='has-dropdown active'>
+              <a href='#'>공지</a>
+              <ul class='dropdown'>
+                <li class='active'><a href='#'>학생회 공지사항</a></li>
+                <li><a href='#'>학과 공지사항</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>공간</a>
+              <ul class='dropdown'>
+                <li><a href='#'>게시판</a></li>
+                <li><a href='#'>자기소개</a></li>
+                <li><a href='#'>행사후기</a></li>
+                <li><a href='#'>시간표</a></li>
+                <li><a href='#'>06학번 이전</a></li>
+                <li><a href='#'>06학번</a></li>
+                <li><a href='#'>07학번</a></li>
+                <li><a href='#'>08학번</a></li>
+                <li><a href='#'>09학번</a></li>
+                <li><a href='#'>10학번</a></li>
+                <li><a href='#'>11학번</a></li>
+                <li><a href='#'>12학번</a></li>
+                <li><a href='#'>13학번</a></li>
+                <li><a href='#'>14학번</a></li>
+                <li><a href='#'>제2전공</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>생활</a>
+              <ul class='dropdown'>
+                <li><a href='#'>자유시장</a></li>
+                <li><a href='#'>인력시장</a></li>
+                <li><a href='#'>가기 좋은 곳</a></li>
+                <li><a href='#'>생활 정보</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>자료</a>
+              <ul class='dropdown'>
+                <li><a href='#'>임고 자료실</a></li>
+                <li><a href='#'>기출 자료실</a></li>
+                <li><a href='#'>사진 기록실</a></li>
+                <li><a href='#'>영상 기록실</a></li>
+                <li><a href='#'>발간물 보관실</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>기능</a>
+              <ul class='dropdown'>
+                <li><a href='#'>채팅</a></li>
+                <li><a href='#'>일정관리자</a></li>
+                <li><a href='#'>주소록</a></li>
+                <li><a href='#'>과방 도서 대출</a></li>
+                <li><a href='#'>회원 승인</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class='right'>
+            <li><a href="#">SIGN IN</a></li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+    <article>
+      <section class='row list'>
+        <div class='row heading'>
+          <div class='small-6 columns'>
+            <h3>학생회 공지사항 <small class='on-read'><i class='fa fa-angle-double-right'></i> 소모임</small></h3>
+          </div>
+          <div class='small-6 columns'>
+            <div class='row collapse'>
+              <div class='small-11 columns'>
+                <input type="search" name="query" value=""/>
+              </div>
+              <div class='small-1 columns'>
+                <a href='#' class='button postfix'><i class='fa fa-search'>&nbsp;</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <header class='document on-read'>
+          <div class='row'>
+            <div class='small-10 column'>
+              <h4>빅브라더에서 회원을 모집합니다!
+                <a href='#' class='right'><i class='fa fa-trash'>&nbsp;</i></a>
+                <a href='#' class='right'><i class='fa fa-pencil'>&nbsp;</i></a>
+              </h4>
+            </div>
+            <div class='small-2 column'>
+              <img class='profile' src='http://www.bankofcanada.ca/wp-content/uploads/2014/04/placeholder.png'/>
+              &nbsp;
+              <span class='write by'>
+                정승재
+                <sup>13</sup>
+              </span>
+              <br/>
+              <span class='write at right'>2014. 09. 14</span>
+            </div>
+          </div>
+        </header>
+        <section class='document on-read'>
+          <p>
+            수학교육과 학생회 홈페이지를 관리하고 있는, 빅브라더가 새 회원을 모집합니다.
+          </p>
+          <p>
+            <strong>개발 경험이 없어도</strong>, <strong>인터넷을 쓰기만 했더라도</strong>, 누구나 들어와서 회원이 될 수 있습니다.<br/>
+            상세한 사항은 빅브라더 14학번들에게 물어보세요!
+          </p>
+          <p>
+            모양을 보자면 예시로 문장을 더 써줘야 할 것 같은데, 뭘 써야 할지 모르겠다.<br/>
+            <ins>에라 모르겠다</ins> <del>그냥 막 써?</del><br/>
+            여튼 이 내용은 보통 짧지 않을겁니다...
+        </section>
+        <hr/>
+        <aside class='comments on-read'>
+          <div class='row'>
+            <div class='small-12'>
+              <img class='profile' src='http://www.bankofcanada.ca/wp-content/uploads/2014/04/placeholder.png'/>
+              &nbsp;
+              <span class='write by'>
+                정승재
+                <sup>13</sup>
+                <q>글쓴이</q>
+                &nbsp;
+                <small class='write at'>(2014. 09. 14)</small>
+              </span>
+              <p>
+                여러분의 많은 참여 기다릴게요!
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='small-12'>
+              <img class='profile' src='http://www.bankofcanada.ca/wp-content/uploads/2014/04/placeholder.png'/>
+              &nbsp;
+              <span class='write by'>
+                김종민
+                <sup>14</sup>
+                <q>정신없는 라마누잔</q>
+                &nbsp;
+                <small class='write at'>(2014. 09. 14)</small>
+              </span>
+              <p>
+                여기 들어가면 복수전공하는 데 도움이 될까요?
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='small-11 small-offset-1'>
+              <img class='profile' src='http://www.bankofcanada.ca/wp-content/uploads/2014/04/placeholder.png'/>
+              &nbsp;
+              <span class='write by'>
+                익명
+                <sup>??</sup>
+                <q>멘붕하는 괴델</q>
+                &nbsp;
+                <small class='write at'>(2014. 09. 14)</small>
+              </span>
+              <p>
+                SMIC이다!
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='small-11 small-offset-1'>
+              <img class='profile' src='http://www.bankofcanada.ca/wp-content/uploads/2014/04/placeholder.png'/>
+              &nbsp;
+              <span class='write by'>
+                익명
+                <sup>??</sup>
+                <q>계산하는 유클리드</q>
+                &nbsp;
+                <small class='write at'>(2014. 09. 14)</small>
+              </span>
+              <p>
+                SMIC이다! 2
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='small-10 small-offset-2'>
+              <img class='profile' src='http://www.bankofcanada.ca/wp-content/uploads/2014/04/placeholder.png'/>
+              &nbsp;
+              <span class='write by'>
+                김종민
+                <sup>14</sup>
+                <q>정신없는 라마누잔</q>
+                &nbsp;
+                <small class='write at'>(2014. 09. 14)</small>
+              </span>
+              <p>
+                이분들 뭔가요
+              </p>
+            </div>
+          </div>
+        </aside>
+
+        <table>
+          <tr>
+            <th width='30'>
+              <a href="#" data-dropdown="drop-setting"><i class='fa fa-gears'>&nbsp;</i></a>
+              <ul id="drop-setting" class="small f-dropdown" data-dropdown-content>
+                <li><a href="#">모든 항목 선택</a></li>
+                <li><a href="#" data-reveal-id='alert'>선택 항목 삭제</a></li>
+                <li><a href="#" data-reveal-id='alert'>선택 항목 이동</a></li>
+                <li><a href="#" data-reveal-id='alert'>선택 항목 수정</a></li>
+                <li><a href="#" data-reveal-id='fixboard'>게시판 분류 설정</a></li>
+                <li><a href="#" data-reveal-id='fixboard'>게시판 권한 설정</a></li>
+              </ul>
+            </th>
+            <th width='100'>
+              <a href="#" data-dropdown="drop-category">분류 <i class='fa fa-caret-down'>&nbsp;</i></a>
+              <ul id="drop-category" class="small f-dropdown" data-dropdown-content>
+                <li><a href="#">분류: 과행사</a></li>
+                <li><a href="#">분류: 재정</a></li>
+                <li><a href="#">분류: 기록물</a></li>
+                <li><a href="#">분류: 소모임</a></li>
+                <li><a href="#">분류: 선거관리</a></li>
+                <li><a href="#">분류: 기타</a></li>
+              </ul>
+            </th>
+            <th>
+              제목
+            </th>
+            <th width='100'>
+              작성자
+            </th>
+            <th width='100'>
+              작성일
+            </th>
+          </tr>
+          <tr onclick='javascript:toggleReadPage()'>
+            <td>
+              <i class='fa fa-square-o'></i>
+            </td>
+            <td>
+              <span class='write on'>기타</span>
+            </td>
+            <td>
+              <span class='title'>이스누미는 이렇게 사용합니다.</span>
+              <span class='label comment radius right'>7</span>
+            </td>
+            <td>
+              <span class='write by'>정승재<sup>13</sup></span>
+            </td>
+            <td>
+              <span class='write at'>14. 09. 24.</span>
+            </td>
+          </tr>
+          <tr onclick='javascript:toggleReadPage()'>
+            <td>
+              <i class='fa fa-square-o'></i>
+            </td>
+            <td>
+              <span class='write on'>재정</span>
+            </td>
+            <td>
+              <span class='title'>지난 8월 회계 내역을 알려드리겠습니다.</span>
+              <span class='label comment radius right'>14</span>
+            </td>
+            <td>
+              <span class='write by'>박현우<sup>12</sup></span>
+            </td>
+            <td>
+              <span class='write at'>14. 09. 24.</span>
+            </td>
+          </tr>
+          <tr onclick='javascript:toggleReadPage()'>
+            <td>
+              <i class='fa fa-square-o'></i>
+            </td>
+            <td>
+              <span class='write on'>기록물</span>
+            </td>
+            <td>
+              <span class='title'>지난 사범대 학생회 회의록입니다.</span>
+              <span class='label comment radius right'>1</span>
+            </td>
+            <td>
+              <span class='write by'>박현우<sup>12</sup></span>
+            </td>
+            <td>
+              <span class='write at'>14. 09. 19.</span>
+            </td>
+          </tr>
+          <tr onclick='javascript:toggleReadPage()'>
+            <td>
+              <i class='fa fa-square-o'></i>
+            </td>
+            <td>
+              <span class='write on'>소모임</span>
+            </td>
+            <td>
+              <span class='title'>빅브라더에서 회원을 모집합니다.</span>
+              <span class='label comment radius right'>25</span>
+            </td>
+            <td>
+              <span class='write by'>정승재<sup>13</sup></span>
+            </td>
+            <td>
+              <span class='write at'>14. 09. 19.</span>
+            </td>
+          </tr>
+          <tr onclick='javascript:toggleReadPage()'>
+            <td>
+              <i class='fa fa-square-o'></i>
+            </td>
+            <td>
+              <span class='write on'>과행사</span>
+            </td>
+            <td>
+              <span class='title'>여러분! 과행사 후기를 써 주세요</span>
+              <span class='label comment radius right'>7</span>
+            </td>
+            <td>
+              <span class='write by'>박현우<sup>12</sup></span>
+            </td>
+            <td>
+              <span class='write at'>14. 09. 17.</span>
+            </td>
+          </tr>
+          <tr onclick='javascript:toggleReadPage()'>
+            <td>
+              <i class='fa fa-square-o'></i>
+            </td>
+            <td>
+              <span class='write on'>소모임</span>
+            </td>
+            <td>
+              <span class='title'>소리터 공연이 있습니다!</span>
+              <span class='label comment radius right'>6</span>
+            </td>
+            <td>
+              <span class='write by'>홍태희<sup>12</sup></span>
+            </td>
+            <td>
+              <span class='write at'>14. 09. 14.</span>
+            </td>
+          </tr>
+          <tr onclick='javascript:toggleReadPage()'>
+            <td>
+              <i class='fa fa-square-o'></i>
+            </td>
+            <td>
+              <span class='write on'>소모임</span>
+            </td>
+            <td>
+              <span class='title'>이화여대, 고려대와 함께하는 조인트 세미나!</span>
+              <span class='label comment radius right'>8</span>
+            </td>
+            <td>
+              <span class='write by'>길준영<sup>13</sup></span>
+            </td>
+            <td>
+              <span class='write at'>14. 09. 07.</span>
+            </td>
+          </tr>
+          <tr onclick='javascript:toggleReadPage()'>
+            <td>
+              <i class='fa fa-square-o'></i>
+            </td>
+            <td>
+              <span class='write on'>재정</span>
+            </td>
+            <td>
+              <span class='title'>지난 7월 회계 내역입니다.</span>
+              <span class='label comment radius right'>8</span>
+            </td>
+            <td>
+              <span class='write by'>박현우<sup>12</sup></span>
+            </td>
+            <td>
+              <span class='write at'>14. 09. 04.</span>
+            </td>
+          </tr>
+          <tr onclick='javascript:toggleReadPage()'>
+            <td>
+              <i class='fa fa-square-o'></i>
+            </td>
+            <td>
+              <span class='write on'>과행사</span>
+            </td>
+            <td>
+              <span class='title'>개총이 열립니다!</span>
+              <span class='label comment radius right'>23</span>
+            </td>
+            <td>
+              <span class='write by'>유연식<sup>12</sup></span>
+            </td>
+            <td>
+              <span class='write at'>14. 09. 01.</span>
+            </td>
+          </tr>
+          <tr onclick='javascript:toggleReadPage()'>
+            <td>
+              <i class='fa fa-square-o'></i>
+            </td>
+            <td>
+              <span class='write on'>기타</span>
+            </td>
+            <td>
+              <span class='title'>이스누미의 새로운 사이트에 오신 것을 환영합니다.</span>
+              <span class='label comment radius right'>1</span>
+            </td>
+            <td>
+              <span class='write by'>관리자</span>
+            </td>
+            <td>
+              <span class='write at'>14. 09. 14.</span>
+            </td>
+          </tr>
+        </table>
+
+        <div class='pagination-centered'>
+          <ul class="pagination">
+            <li class="arrow unavailable"><a href="">&laquo;</a></li>
+            <li class="current"><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li class="unavailable"><a href="">&hellip;</a></li>
+            <li><a href="">12</a></li>
+            <li><a href="">13</a></li>
+            <li class="arrow"><a href="">&raquo;</a></li>
+          </ul>
+        </div>
+      </section>
+      <aside>
+        <div id="alert" class="reveal-modal" data-reveal>
+          <h2>권한이 없습니다.</h2>
+          <p class="lead">이 작업, 진짜 하실 수 있으신가요?</p>
+          <p>말씀하신 작업을 처리할 수 있는 위치가 아니십니다. 관리자에게 권한을 요청하시거나, 쿨하게 포기하십시오.</p>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="fixboard" class="reveal-modal" data-reveal>
+          <h2>게시판 특성 수정</h2>
+          <p class="lead">게시판 분류와 명칭, 접근 권한을 수정합니다.</p>
+          <div class='row'>
+            <div class='small-6 column'>
+              <input type="text" placeholder="게시판의 이름을 지어주세요."/>
+              <input type="text" placeholder="추가할 카테고리의 명칭을 입력하세요."/>
+              <ul class='inline-list'>
+                <li><a class='button tiny radius'>과행사</a></li>
+                <li><a class='button tiny radius'>재정</a></li>
+                <li><a class='button tiny radius'>기록물</a></li>
+                <li><a class='button tiny radius'>소모임</a></li>
+                <li><a class='button tiny radius'>선거관리</a></li>
+                <li><a class='button tiny radius'>기타</a></li>
+              </ul>
+            </div>
+            <div class='small-6 column'>
+              <span> 새 글 쓰기 </span>
+              <div class="range-slider" data-slider="write" data-options="start: 1; end: 6;">
+                <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                <span class="range-slider-active-segment"></span>
+                <input type="hidden" name="write">
+              </div>
+              <span> 읽고 댓글 달기 </span>
+              <div class="range-slider" data-slider="read" data-options="start: 1; end: 6;">
+                <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                <span class="range-slider-active-segment"></span>
+                <input type="hidden" name="read">
+              </div>
+            </div>
+          </div>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+      </aside>
+    </article>
+    <script>
+      $(document).foundation();
+      $('.on-read').hide();
+
+      var toggleReadPage = function(){
+        $('.on-read').toggle();
+      };
+    </script>
+  </body>
+</html>
