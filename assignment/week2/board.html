@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" />
     <title>eSNUME 게시판</title>
     <link rel='stylesheet' href='http://cdn.jsdelivr.net/foundation/5.4.3/css/foundation.min.css'/>
-    <link rel="stylesheet" href="./board.css"/>
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./common.css"/>
+    <link rel="stylesheet" href="./board.css"/>
     <script src='http://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js'></script>
     <script src='http://cdn.jsdelivr.net/foundation/5.4.3/js/foundation.min.js'></script>
   </head>
@@ -90,13 +92,13 @@
     <article>
       <section class='row list'>
         <div class='row heading'>
-          <div class='small-6 columns'>
+          <div class='medium-6 columns'>
             <h3>학생회 공지사항 <small class='on-read'><i class='fa fa-angle-double-right'></i> 소모임</small></h3>
           </div>
-          <div class='small-6 columns'>
+          <div class='medium-6 columns'>
             <div class='row collapse'>
               <div class='small-11 columns'>
-                <input type="search" name="query" value=""/>
+                <input type="search" name="query" value="" placeholder='검색할 게시물의 제목, 내용을 입력하세요'/>
               </div>
               <div class='small-1 columns'>
                 <a href='#' class='button postfix'><i class='fa fa-search'>&nbsp;</i></a>
@@ -107,13 +109,13 @@
 
         <header class='document on-read'>
           <div class='row'>
-            <div class='small-10 column'>
+            <div class='medium-10 column'>
               <h4>빅브라더에서 회원을 모집합니다!
                 <a href='#' class='right'><i class='fa fa-trash'>&nbsp;</i></a>
                 <a href='#' class='right'><i class='fa fa-pencil'>&nbsp;</i></a>
               </h4>
             </div>
-            <div class='small-2 column'>
+            <div class='medium-2 column'>
               <img class='profile' src='http://www.bankofcanada.ca/wp-content/uploads/2014/04/placeholder.png'/>
               &nbsp;
               <span class='write by'>
@@ -231,8 +233,7 @@
                 <li><a href="#" data-reveal-id='alert'>선택 항목 삭제</a></li>
                 <li><a href="#" data-reveal-id='alert'>선택 항목 이동</a></li>
                 <li><a href="#" data-reveal-id='alert'>선택 항목 수정</a></li>
-                <li><a href="#" data-reveal-id='fixboard'>게시판 분류 설정</a></li>
-                <li><a href="#" data-reveal-id='fixboard'>게시판 권한 설정</a></li>
+                <li><a href="#" data-reveal-id='fixboard'>게시판 설정</a></li>
               </ul>
             </th>
             <th width='100'>
