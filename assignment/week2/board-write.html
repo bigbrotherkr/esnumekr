@@ -1,0 +1,166 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" />
+    <title>eSNUME 게시판</title>
+    <link rel='stylesheet' href='http://cdn.jsdelivr.net/foundation/5.4.3/css/foundation.min.css'/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./common.css"/>
+    <link rel="stylesheet" href="./board.css"/>
+    <script src='http://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js'></script>
+    <script src='http://cdn.jsdelivr.net/foundation/5.4.3/js/foundation.min.js'></script>
+  </head>
+  <body>
+    <nav class='contain-to-grid sticky'>
+      <div class='top-bar' data-topbar role='navigation' data-options='sticky_on: large'>
+        <ul class='title-area'>
+          <li class='name'>
+            <h1><a href='#'>ⓔ-SNUME</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+        <section class='top-bar-section'>
+          <ul class='left'>
+            <li class='has-dropdown active'>
+              <a href='#'>공지</a>
+              <ul class='dropdown'>
+                <li class='active'><a href='#'>학생회 공지사항</a></li>
+                <li><a href='#'>학과 공지사항</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>공간</a>
+              <ul class='dropdown'>
+                <li><a href='#'>게시판</a></li>
+                <li><a href='#'>자기소개</a></li>
+                <li><a href='#'>행사후기</a></li>
+                <li><a href='#'>시간표</a></li>
+                <li><a href='#'>06학번 이전</a></li>
+                <li><a href='#'>06학번</a></li>
+                <li><a href='#'>07학번</a></li>
+                <li><a href='#'>08학번</a></li>
+                <li><a href='#'>09학번</a></li>
+                <li><a href='#'>10학번</a></li>
+                <li><a href='#'>11학번</a></li>
+                <li><a href='#'>12학번</a></li>
+                <li><a href='#'>13학번</a></li>
+                <li><a href='#'>14학번</a></li>
+                <li><a href='#'>제2전공</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>생활</a>
+              <ul class='dropdown'>
+                <li><a href='#'>자유시장</a></li>
+                <li><a href='#'>인력시장</a></li>
+                <li><a href='#'>가기 좋은 곳</a></li>
+                <li><a href='#'>생활 정보</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>자료</a>
+              <ul class='dropdown'>
+                <li><a href='#'>임고 자료실</a></li>
+                <li><a href='#'>기출 자료실</a></li>
+                <li><a href='#'>사진 기록실</a></li>
+                <li><a href='#'>영상 기록실</a></li>
+                <li><a href='#'>발간물 보관실</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>기능</a>
+              <ul class='dropdown'>
+                <li><a href='#'>채팅</a></li>
+                <li><a href='#'>일정관리자</a></li>
+                <li><a href='#'>주소록</a></li>
+                <li><a href='#'>과방 도서 대출</a></li>
+                <li><a href='#'>회원 승인</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class='right'>
+            <li><a href="#">SIGN IN</a></li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+    <article>
+      <section class='row list'>
+        <div class='row heading'>
+          <div class='medium-6 columns'>
+            <h3>학생회 공지사항</h3>
+          </div>
+          <div class='medium-6 columns'>
+            <a href="#" class='button small radius expand secondary' data-dropdown="drop-category">분류: 없음</a>
+            <ul id="drop-category" class="small f-dropdown" data-dropdown-content>
+              <li><a href="#">분류: 과행사</a></li>
+              <li><a href="#">분류: 재정</a></li>
+              <li><a href="#">분류: 기록물</a></li>
+              <li><a href="#">분류: 소모임</a></li>
+              <li><a href="#">분류: 선거관리</a></li>
+              <li><a href="#">분류: 기타</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <header class='document'>
+          <div class='row'>
+            <div class='medium-10 column'>
+              <input type='text' placeholder='제목을 입력하세요'/>
+            </div>
+            <div class='medium-2 column'>
+              <img class='profile' src='http://www.bankofcanada.ca/wp-content/uploads/2014/04/placeholder.png'/>
+              &nbsp;
+              <span class='write by'>
+                정승재
+                <sup>13</sup>
+                <br/>
+                <span class='write at right'>2014. 09. 14</span>
+              </span>
+            </div>
+          </div>
+        </header>
+        <section class='document'>
+          <textarea placeholder='내용을 입력하세요'></textarea>
+        </section>
+        <aside class='fixed-right'>
+          <ul class='stack-for-small button-group'>
+            <li>
+              <a href="#" class='button small secondary'>
+                <i class='fa fa-upload'></i>&nbsp;
+                파일 첨부
+              </a>
+            </li>
+            <li>
+              <a href="#" class='button small secondary'>
+                <i class='fa fa-user'></i>&nbsp;
+                인물 태그
+              </a>
+            </li>
+            <li>
+              <a href="#" class='button small success'>
+                <i class='fa fa-check'></i>&nbsp;
+                확인
+              </a>
+            </li>
+            <li>
+              <a href="#" class='button small alert'>
+                <i class='fa fa-times'></i>&nbsp;
+                취소
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <hr/>
+      </section>
+    </article>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
