@@ -1,0 +1,61 @@
+.calendar{
+  padding: 1.5em;
+  background: #f0f0f0;
+}
+.calendar .heading a i{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+  width: 1em;
+}
+.calendar .heading h3{
+  color: #0099ff;
+  text-shadow: 1px 1px 1px #007399;
+}
+.calendar .heading h3 small{
+  text-shadow:none;
+  opacity: .7;
+}
+
+.calendar .cal li{
+  font-size: .9em;
+  color: #0f0f0f;
+  text-align: center;
+}
+.calendar .cal li:nth-child(n+8){
+  height: 7em;
+}
+.calendar .cal li:nth-child(2n){
+  background: #e1e1e1;
+}
+.calendar .cal li.sat{
+  color: #0099ff;
+}
+.calendar .cal li.sun{
+  color: #ff8800;
+}
+.calendar .cal li a{
+  font-size: 1.1em;
+  margin: .1em;
+  display: inline-block;
+}
+
+#calinfo .at{
+  font-size: .9em;
+  color: #0099ff;
+  display: inline-block;
+}
+#calinfo .by{
+  font-size: .8em;
+  color: #1e1e1e;
+  display: inline-block;
+}
+#calinfo .in{
+  font-size: .9em;
+  color: #0099ff;
+  display: inline-block;
+}

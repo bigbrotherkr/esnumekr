@@ -1,0 +1,266 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" />
+    <title>eSNUME 일정 목록</title>
+    <link rel='stylesheet' href='http://cdn.jsdelivr.net/foundation/5.4.3/css/foundation.min.css'/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./common.css"/>
+    <link rel="stylesheet" href="./calendar.css"/>
+    <script src='http://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js'></script>
+    <script src='http://cdn.jsdelivr.net/foundation/5.4.3/js/foundation.min.js'></script>
+  </head>
+  <body>
+    <nav class='contain-to-grid sticky'>
+      <div class='top-bar' data-topbar role='navigation' data-options='sticky_on: large'>
+        <ul class='title-area'>
+          <li class='name'>
+            <h1><a href='#'>ⓔ-SNUME</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+        <section class='top-bar-section'>
+          <ul class='left'>
+            <li class='has-dropdown active'>
+              <a href='#'>공지</a>
+              <ul class='dropdown'>
+                <li class='active'><a href='#'>학생회 공지사항</a></li>
+                <li><a href='#'>학과 공지사항</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>공간</a>
+              <ul class='dropdown'>
+                <li><a href='#'>게시판</a></li>
+                <li><a href='#'>자기소개</a></li>
+                <li><a href='#'>행사후기</a></li>
+                <li><a href='#'>시간표</a></li>
+                <li><a href='#'>06학번 이전</a></li>
+                <li><a href='#'>06학번</a></li>
+                <li><a href='#'>07학번</a></li>
+                <li><a href='#'>08학번</a></li>
+                <li><a href='#'>09학번</a></li>
+                <li><a href='#'>10학번</a></li>
+                <li><a href='#'>11학번</a></li>
+                <li><a href='#'>12학번</a></li>
+                <li><a href='#'>13학번</a></li>
+                <li><a href='#'>14학번</a></li>
+                <li><a href='#'>제2전공</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>생활</a>
+              <ul class='dropdown'>
+                <li><a href='#'>자유시장</a></li>
+                <li><a href='#'>인력시장</a></li>
+                <li><a href='#'>가기 좋은 곳</a></li>
+                <li><a href='#'>생활 정보</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>자료</a>
+              <ul class='dropdown'>
+                <li><a href='#'>임고 자료실</a></li>
+                <li><a href='#'>기출 자료실</a></li>
+                <li><a href='#'>사진 기록실</a></li>
+                <li><a href='#'>영상 기록실</a></li>
+                <li><a href='#'>발간물 보관실</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>기능</a>
+              <ul class='dropdown'>
+                <li><a href='#'>채팅</a></li>
+                <li><a href='#'>일정관리자</a></li>
+                <li><a href='#'>주소록</a></li>
+                <li><a href='#'>과방 도서 대출</a></li>
+                <li><a href='#'>회원 승인</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class='right'>
+            <li><a href="#">SIGN IN</a></li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+    <article>
+      <section class='row calendar'>
+        <div class='row heading'>
+          <div class='medium-6 columns'>
+            <h3>일정 목록<small>&nbsp;&dash;&nbsp;<q>수학교육과의 모든 일정</q></small></h3>
+          </div>
+          <div class='medium-6 columns'>
+            <div class='row collapse'>
+              <div class='small-11 columns'>
+                <input type="search" name="query" value="" placeholder='검색할 단어를 입력하세요'/>
+              </div>
+              <div class='small-1 columns'>
+                <a href='#' class='button postfix'><i class='fa fa-search'>&nbsp;</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class='pagination-centered'>
+          <ul class="pagination">
+            <li class="arrow"><a href="">2013&laquo;</a></li>
+            <li><a href="">8월</a></li>
+            <li class="current"><a href="">2014. 9</a></li>
+            <li><a href="">10월</a></li>
+            <li class="arrow"><a href="">&raquo;2015</a></li>
+          </ul>
+        </div>
+        <ul class='small-block-grid-1 medium-block-grid-7 cal'>
+          <li class='show-for-medium-up'>
+            월
+          </li>
+          <li class='show-for-medium-up'>
+            화
+          </li>
+          <li class='show-for-medium-up'>
+            수
+          </li>
+          <li class='show-for-medium-up'>
+            목
+          </li>
+          <li class='show-for-medium-up'>
+            금
+          </li>
+          <li class='sat show-for-medium-up'>
+            토
+          </li>
+          <li class='sun show-for-medium-up'>
+            일
+          </li>
+          <li data-reveal-id='newcal'>
+            1
+          </li>
+          <li data-reveal-id='newcal'>
+            2
+          </li>
+          <li data-reveal-id='newcal'>
+            3
+          </li>
+          <li data-reveal-id='newcal'>
+            4
+          </li>
+          <li data-reveal-id='newcal'>
+            5
+            <br/>
+            <a href='#' title='개강총회' data-reveal-id='calinfo'> <i class='fa fa-bullhorn'></i> 17:00 <span class='show-for-small-only'>~ 24:00, 개강총회</span></a>
+          </li>
+          <li class='sat' data-reveal-id='newcal'>
+            6
+            <br/>
+            <a href='#' title='괜사 개파!' data-reveal-id='calinfo'> <i class='fa fa-bullhorn'></i> 19:30 <span class='show-for-small-only'>~ 22:00, 괜사 개파!</span></a>
+            <a href='#' title='홍길동15' data-reveal-id='calinfo'> <i class='fa fa-birthday-cake'></i> 00:00 <span class='show-for-small-only'>~ 24:00, 홍길동15</span></a>
+          </li>
+          <li class='sun' data-reveal-id='newcal'>
+            7
+            <br/>
+            <a href='#' title='15 소풍' data-reveal-id='calinfo'> <i class='fa fa-bicycle'></i> 11:30 <span class='show-for-small-only'>~ 18:00, 15 소풍</span></a>
+          </li>
+          <li data-reveal-id='newcal'>
+            8
+          </li>
+          <li data-reveal-id='newcal'>
+            9
+          </li>
+          <li data-reveal-id='newcal'>
+            10
+          </li>
+        </ul>
+      </section>
+      <aside>
+        <div id="newcal" class="reveal-modal" data-reveal>
+          <h2>새 일정</h2>
+          <p class="lead">새로운 일정을 등록합니다.</p>
+          <div class='row'>
+            <div class='small-12 large-6 column'>
+              <small>시작일</small>
+              <input type="datetime-local" value='2014-09-30T00:00:00'/>
+              <input type="text" placeholder="일정의 이름을 지어주세요."/>
+              <select>
+                <optgroup label='공식일정'>
+                  <option value='bullhorn'>공식행사</option>
+                  <option value='file'>학사일정</option>
+                  <option value='university'>시험</option>
+                </optgroup>
+                <optgroup label='행사'>
+                  <option value='soccer-ball-o'>체육행사</option>
+                  <option value='camera-retro'>전시회</option>
+                  <option value='film'>영화제</option>
+                  <option value='music'>음악회</option>
+                  <option value='code'>Hackaton</option>
+                </optgroup>
+                <optgroup label='소그룹 일정'>
+                  <option value='group'>모임</option>
+                  <option value='plane'>여행</option>
+                  <option value='puzzle-piece'>놀이</option>
+                  <option value='gamepad'>게임</option>
+                  <option value='birthday-cake'>생일</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class='small-12 large-6 column'>
+              <small>종료일</small>
+              <input type="datetime-local" value='2014-09-30T00:00:00'/>
+              <input type="text" placeholder='장소는 어디인가요?'/>
+              <select>
+                <optgroup label='개인'>
+                  <option value=''>본인 (주최자)</option>
+                </optgroup>
+                <optgroup label='특수집단'>
+                  <option value='A'>학생회 (주최집단)</option>
+                  <option value='B' disabled>학과사무실 (주최집단)</option>
+                  <option value='C' disabled>교수 (주최집단)</option>
+                  <option value='D' disabled>대학원생 (주최집단)</option>
+                </optgroup>
+                <optgroup label='일반집단'>
+                  <option value='V'>학회 (주최집단)</option>
+                  <option value='W1'>부여중교생 (주최집단)</option>
+                  <option value='W2'>부중교생 (주최집단)</option>
+                  <option value='W3'>부고교생 (주최집단)</option>
+                  <option value='Y'>소속학번 (주최집단)</option>
+                </optgroup>
+                <optgroup label='소모임/동아리'>
+                  <option disabled>소속 소모임이 없습니다</option>
+                </optgroup>
+                <optgroup label='모임'>
+                  <option disabled>소속 모임이 없습니다</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <textarea placeholder='좀 더 부연설명하자면?'></textarea>
+          <a class="close-reveal-modal"><i class='fa fa-check'></i></a>
+        </div>
+
+        <div id="calinfo" class="reveal-modal" data-reveal>
+          <h2>일정 : 개강총회</h2>
+          <span class='at'>2014. 09. 05, 17:00 ~ 09. 05, 24:00</span>
+          <span class='by pull-right'>학생회 (주관그룹)</span>
+          <br/>
+          <span class='in'>서울대학교 일원</span>
+          <p class='lead'>수학교육과의 개강총회 행사입니다.</p>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+      </aside>
+    </article>
+    <script>
+      $(document).foundation();
+      $('.on-read').hide();
+
+      var toggleReadPage = function(){
+        $('.on-read').toggle();
+      };
+    </script>
+  </body>
+</html>

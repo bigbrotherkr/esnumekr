@@ -1,0 +1,263 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" />
+    <title>eSNUME 회의공간</title>
+    <link rel='stylesheet' href='http://cdn.jsdelivr.net/foundation/5.4.3/css/foundation.min.css'/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./common.css"/>
+    <link rel="stylesheet" href="./chat.css"/>
+    <script src='http://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js'></script>
+    <script src='http://cdn.jsdelivr.net/foundation/5.4.3/js/foundation.min.js'></script>
+  </head>
+  <body>
+    <nav class='contain-to-grid sticky'>
+      <div class='top-bar' data-topbar role='navigation' data-options='sticky_on: large'>
+        <ul class='title-area'>
+          <li class='name'>
+            <h1><a href='#'>ⓔ-SNUME</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+        <section class='top-bar-section'>
+          <ul class='left'>
+            <li class='has-dropdown active'>
+              <a href='#'>공지</a>
+              <ul class='dropdown'>
+                <li class='active'><a href='#'>학생회 공지사항</a></li>
+                <li><a href='#'>학과 공지사항</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>공간</a>
+              <ul class='dropdown'>
+                <li><a href='#'>게시판</a></li>
+                <li><a href='#'>자기소개</a></li>
+                <li><a href='#'>행사후기</a></li>
+                <li><a href='#'>시간표</a></li>
+                <li><a href='#'>06학번 이전</a></li>
+                <li><a href='#'>06학번</a></li>
+                <li><a href='#'>07학번</a></li>
+                <li><a href='#'>08학번</a></li>
+                <li><a href='#'>09학번</a></li>
+                <li><a href='#'>10학번</a></li>
+                <li><a href='#'>11학번</a></li>
+                <li><a href='#'>12학번</a></li>
+                <li><a href='#'>13학번</a></li>
+                <li><a href='#'>14학번</a></li>
+                <li><a href='#'>제2전공</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>생활</a>
+              <ul class='dropdown'>
+                <li><a href='#'>자유시장</a></li>
+                <li><a href='#'>인력시장</a></li>
+                <li><a href='#'>가기 좋은 곳</a></li>
+                <li><a href='#'>생활 정보</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>자료</a>
+              <ul class='dropdown'>
+                <li><a href='#'>임고 자료실</a></li>
+                <li><a href='#'>기출 자료실</a></li>
+                <li><a href='#'>사진 기록실</a></li>
+                <li><a href='#'>영상 기록실</a></li>
+                <li><a href='#'>발간물 보관실</a></li>
+              </ul>
+            </li>
+            <li class='has-dropdown'>
+              <a href='#'>기능</a>
+              <ul class='dropdown'>
+                <li><a href='#'>채팅</a></li>
+                <li><a href='#'>일정관리자</a></li>
+                <li><a href='#'>주소록</a></li>
+                <li><a href='#'>과방 도서 대출</a></li>
+                <li><a href='#'>회원 승인</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class='right'>
+            <li><a href="#">SIGN IN</a></li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+    <article>
+      <section class='row chat'>
+        <div class='row heading'>
+          <div class='medium-6 columns'>
+            <h3>승훈이네 사랑방<small>&nbsp;&dash;&nbsp;<q>회의공간</q></small></h3>
+          </div>
+          <div class='medium-6 columns'>
+            <div class='row collapse'>
+              <div class='small-11 columns'>
+                <input type="search" name="query" value="" placeholder='검색할 단어를 입력하세요'/>
+              </div>
+              <div class='small-1 column'>
+                <a href='#' class='button postfix'><i class='fa fa-search'>&nbsp;</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='icon-bar six-up'>
+          <a href='#' class='item'><i class='fa fa-group'></i>회원</a>
+          <a href='#' class='item'><i class='fa fa-bullhorn'></i>공지</a>
+          <a href='#' class='item'><i class='fa fa-archive'></i>파일</a>
+          <a href='#' class='item'><i class='fa fa-check-square-o'></i>투표</a>
+          <a href='#' class='item'><i class='fa fa-calendar-o'></i>일정</a>
+          <a href='#' class='item'><i class='fa fa-sign-out'></i>탈회</a>
+        </div>
+        <div id='chat-view'>
+          <div class='small-9 small-offset-3 columns me'>
+            자, 이제 이 당(黨)의 이름을 활빈당(活貧黨)이라 하겠노라! <i class='fa fa-fire'></i>
+            <span class='by'>홍길동<sub>15</sub></span>
+            <span class='at'>2014. 09. 30, 22:30</span>
+          </div>
+          <div class='small-9 columns other'>
+            활빈당, 그것이 뭔 뜻인갑쇼?
+            <span class='by'>개똥이<sub>13</sub></span>
+            <span class='at'>2014. 09. 30, 22:31</span>
+          </div>
+          <div class='small-9 columns other'>
+            예끼, 그것도 모르느냐. 가난한자를 살리는 도둑무리라는 뜻이다.
+            <span class='by'>영심이<sub>11</sub></span>
+            <span class='at'>2014. 09. 30, 22:32</span>
+          </div>
+          <div class='small-9 small-offset-3 columns me'>
+            어이, 그거 모를 수도 있지 왜 면박을 주고 그러는가.
+            <span class='by'>홍길동<sub>15</sub></span>
+            <span class='at'>2014. 09. 30, 22:33</span>
+          </div>
+          <div class='small-9 columns other'>
+            그러게 말여. 지는 안다고 잘난척 하는게비제
+            <span class='by'>개똥이<sub>13</sub></span>
+            <span class='at'>2014. 09. 30, 22:33</span>
+          </div>
+          <div class='small-9 columns other'>
+            아 됐고, 설문이나 하셔.
+            <a href='#' class='add success radius button' data-reveal-id='vote'><i class='fa fa-check-square-o'></i> 활빈당 개파는 어디서?</a>
+            <span class='by'>영심이<sub>11</sub></span>
+            <span class='at'>2014. 09. 30, 22:34</span>
+          </div>
+          <div class='small-9 columns other'>
+            아따 당수는 홍길동인디 왜 니가 나선다냐? <i class='fa fa-frown-o'></i>
+            <span class='by'>개똥이<sub>13</sub></span>
+            <span class='at'>2014. 09. 30, 22:35</span>
+          </div>
+          <div class='small-9 columns other'>
+            설문이 싫으면 이 강령이나 읽으셔
+            <a href='https://www.youtube.com/watch?v=nKIu9yen5nc' class='add success radius button'><i class='fa fa-file'></i> 활빈당강령.flv</a>
+            <span class='by'>영심이<sub>11</sub></span>
+            <span class='at'>2014. 09. 30, 22:36</span>
+          </div>
+          <div class='small-9 columns other'>
+            무슨 강령이 비디오 파일이냐 ㅋㅋㅋㅋ 상황극 그만하고 그래서 우리 개파 언제 할건데
+            <span class='by'>이상훈<sub>13</sub></span>
+            <span class='at'>2014. 09. 30, 22:37</span>
+          </div>
+          <div class='small-9 columns other'>
+            11 복학생 개파 있다. 그리고 그 flv는 빌게이츠가 우리를 속였던 그 비디오지.
+            <a href='#' class='add secondary radius button'>11 복학생 개파 <small>(14. 09. 04)</small></a>
+            <span class='by'>영심이<sub>11</sub></span>
+            <span class='at'>2014. 09. 30, 22:38</span>
+          </div>
+          <div class='small-9 columns other'>
+            아 형, 우리 속이려고 하지 말고요.
+            <span class='by'>이상훈<sub>13</sub></span>
+            <span class='at'>2014. 09. 30, 22:38</span>
+          </div>
+          <div class='small-9 small-offset-3 columns me'>
+            형, 저희 미적 시험 있어요.
+            <a href='#' class='add secondary radius button'>미적 중간고사 <small>(14. 10. 08)</small></a>
+            <span class='by'>홍길동<sub>15</sub></span>
+            <span class='at'>2014. 09. 30, 22:33</span>
+          </div>
+          <div class='small-12 columns me'>
+            <input type='text' placeholder='여기에 글을 입력하세요!'>
+            <span class='by'>홍길동<sub>15</sub></span>
+            <span class='at'>지금</span>
+            <a class='add' data-reveal-id='file'><i class='fa fa-file'></i><sub>첨부</sub></a>
+            <a class='add' data-reveal-id='vote'><i class='fa fa-check-square-o'></i><sub>투표</sub></a>
+            <a class='add'><i class='fa fa-calendar-o'></i><sub>일정</sub></a>
+            <a class='add'><i class='fa fa-smile-o'></i></a>
+            <a class='add'><i>f(x)</i><sup>2</sup></a>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <div id="vote" class="reveal-modal" data-reveal>
+          <h2>투표: 활빈당 개파는 어디서?</h2>
+          <p class="lead">아래에서 선택하세요.</p>
+          <div class='row'>
+            <div class='small-4 columns'>
+              <a><i class='fa fa-square-o'></i> 낙성대</a>
+            </div>
+            <div class='small-8 columns'>
+              <div class='progress success'>
+                <span class='meter' style='width:75%;'>6</span>
+              </div>
+            </div>
+            <div class='small-4 columns'>
+              <a><i class='fa fa-square-o'></i> 6조거리</a>
+            </div>
+            <div class='small-8 columns'>
+              <div class='progress success'>
+                <span class='meter' style='width:0%;'>0</span>
+              </div>
+            </div>
+            <div class='small-4 columns'>
+              <a><i class='fa fa-square-o'></i> 청계천</a>
+            </div>
+            <div class='small-8 columns'>
+              <div class='progress success'>
+                <span class='meter' style='width:12.5%;'>1</span>
+              </div>
+            </div>
+            <div class='small-4 columns'>
+              <a><i class='fa fa-check-square-o'></i> 관악산</a>
+            </div>
+            <div class='small-8 columns'>
+              <div class='progress success'>
+                <span class='meter' style='width:12.5%;'>1</span>
+              </div>
+            </div>
+          </div>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="file" class="reveal-modal" data-reveal>
+          <h2>첨부하기</h2>
+          <p class="lead">아래에서 선택하세요.</p>
+          <div class='row'>
+            <div class='small-12 medium-6 columns'>
+              <h4>파일 업로드 <small>(압축 및 실행파일 불가)</small></h4>
+              <input type='file'/>
+              <h4>웹 링크</h4>
+              <input type='url' placeholder='http://'/>
+            </div>
+            <div class='small-12 medium-6 columns'>
+              <h4>짤방 웹 검색</h4>
+              <input type='search' placeholder='검색할 단어?'/>
+            </div>
+          </div>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+      </aside>
+    </article>
+    <script>
+      $(document).foundation();
+      $('.on-read').hide();
+
+      var toggleReadPage = function(){
+        $('.on-read').toggle();
+      };
+    </script>
+  </body>
+</html>

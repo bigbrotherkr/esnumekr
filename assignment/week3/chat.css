@@ -1,0 +1,150 @@
+.chat{
+  padding: 1.5em;
+  background: #f0f0f0;
+}
+.chat .heading a i{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+  width: 1em;
+}
+.chat .heading h3{
+  color: #0099ff;
+  text-shadow: 1px 1px 1px #007399;
+}
+.chat .heading h3 small{
+  text-shadow:none;
+  opacity: .7;
+}
+.chat .icon-bar i{
+  font-size: 0.8rem;
+  color: #ccc;
+  line-height: 1.3;
+  display:inline-block;
+}
+.chat .icon-bar a{
+  font-size: 0.8rem;
+  padding: .5em;
+  color: #ccc;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.chat-grid a{
+  height: 5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 1em;
+  line-height: 1.5;
+}
+.chat-grid i{
+  opacity: .7;
+}
+#chat-view{
+  padding: 1em;
+}
+
+#chat-view .other{
+  padding: 0.7em;
+  padding-right: 5em;
+  margin-bottom: 0.5em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border: 1px solid #ccc;
+  background: #e1e1e1;
+  box-shadow: 1px 1px 1px 1px #e1e1e1;
+}
+#chat-view .other .by{
+  font-size: .85em;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  color: #999;
+  font-weight: bold;
+}
+#chat-view .other .at{
+  font-size: .7em;
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+  color: #AAA;
+}
+#chat-view .other:before, #chat-view .me:after{
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  z-index: 1;
+}
+#chat-view .other:before{
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 1px solid #ccc;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 0 0, rgba(0,0,0,0) 8px, #ccc 8px, #e1e1e1 10px);
+  box-shadow: 0px 1px #e1e1e1;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+}
+
+#chat-view .me{
+  padding: 0.7em;
+  padding-left: 5em;
+  margin-bottom: 0.5em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 1px solid #adf;
+  background: #ccebff;
+  box-shadow: 1px 1px 1px 1px #ccebff;
+  text-align: right;
+}
+#chat-view .me .by{
+  font-size: .85em;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  color: #5bf;
+  font-weight: bold;
+}
+#chat-view .me .at{
+  font-size: .7em;
+  position: absolute;
+  bottom: 0;
+  left: 1em;
+  color: #adf;
+}
+#chat-view .me:after{
+  border-left: 1px solid #ccebff;
+  border-bottom: 1px solid #adf;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 100% 0, rgba(0,0,0,0) 8px, #adf 8px, #ccebff 10px);
+  box-shadow: 0px 1px #ccebff;
+  right: -10px;
+  width: 10px;
+  height: 10px;
+}
+
+#chat-view .me input{
+  border:none;
+  border-bottom: 1px dashed #09f;
+  background:none;
+  box-shadow: none;
+  text-shadow: 1px 1px 1px #09f;
+}
+#chat-view a.add{
+  display:inline-block;
+  padding: .5em;
+  font-size: .7em;
+}
+#vote .progress span.meter{
+  color:white;
+  text-align: right;
+  padding-right: 5px; 
+}
